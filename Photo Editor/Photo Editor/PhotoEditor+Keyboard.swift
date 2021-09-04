@@ -22,7 +22,7 @@ extension PhotoEditorViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         isTyping = false
         doneButton.isHidden = true
-        hideToolbar(hide: false)
+//        hideToolbar(hide: false)
     }
     
     @objc func keyboardWillChangeFrame(_ notification: NSNotification) {
