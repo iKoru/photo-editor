@@ -165,7 +165,6 @@ extension PhotoEditorViewController : UIGestureRecognizerDelegate  {
         
         hideToolbar(hide: true)
         deleteView.isHidden = false
-        colorPickerView.isHidden = true // added
         
         view.superview?.bringSubviewToFront(view)
         let pointToSuperView = recognizer.location(in: self.view)
@@ -201,10 +200,10 @@ extension PhotoEditorViewController : UIGestureRecognizerDelegate  {
         if recognizer.state == .ended {
             imageViewToPan = nil
             lastPanPoint = nil
-            hideToolbar(hide: false)
+//            hideToolbar(hide: false)
+            topToolbar.isHidden = false
             deleteView.isHidden = true
             let point = recognizer.location(in: self.view)
-            colorPickerView.isHidden = deleteView.frame.contains(point) // added
             
             if deleteView.frame.contains(point) { // Delete the view
                 view.removeFromSuperview()

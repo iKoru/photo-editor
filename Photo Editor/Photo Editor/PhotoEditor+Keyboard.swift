@@ -21,7 +21,9 @@ extension PhotoEditorViewController {
     
     @objc func keyboardWillHide(notification: NSNotification) {
         isTyping = false
+        colorPickerView.isHidden = true
         doneButton.isHidden = true
+        topToolbar.isHidden = false
 //        hideToolbar(hide: false)
     }
     
