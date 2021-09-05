@@ -153,7 +153,7 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="center" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZRl-89-gRO">
-                            <rect key="frame" x="98.5" y="11.5" width="178" height="37"/>
+                            <rect key="frame" x="98" y="11.5" width="179" height="37"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLX-iy-2Rc">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="37"/>
@@ -202,40 +202,40 @@
                                         <action selector="drawButtonTapped:" destination="-1" eventType="touchUpInside" id="uts-mM-XHI"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-Ez-Cio">
-                                    <rect key="frame" x="154" y="6.5" width="24" height="24"/>
+                                <button opaque="NO" contentMode="center" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD" userLabel="TextButton">
+                                    <rect key="frame" x="154" y="6.5" width="25" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="ANs-lF-yH6"/>
+                                    </constraints>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" image="ic_eraser.png">
+                                    <state key="normal" image="ic_text.png">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
-                                        <action selector="clearButtonTapped:" destination="-1" eventType="touchUpInside" id="gXm-sD-poT"/>
+                                        <action selector="textButtonTapped:" destination="-1" eventType="touchUpInside" id="qcG-gq-62j"/>
                                     </connections>
                                 </button>
                             </subviews>
                         </stackView>
-                        <button opaque="NO" contentMode="center" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD" userLabel="TextButton">
-                            <rect key="frame" x="325" y="18" width="25" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="25" id="ANs-lF-yH6"/>
-                            </constraints>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-Ez-Cio">
+                            <rect key="frame" x="326" y="18" width="24" height="24"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" image="ic_text.png">
+                            <state key="normal" image="ic_eraser.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="textButtonTapped:" destination="-1" eventType="touchUpInside" id="qcG-gq-62j"/>
+                                <action selector="clearButtonTapped:" destination="-1" eventType="touchUpInside" id="gXm-sD-poT"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="0wH-LJ-SyD" secondAttribute="trailing" constant="25" id="3zs-SS-dOR"/>
                         <constraint firstAttribute="height" constant="60" id="7QB-HT-iOq"/>
                         <constraint firstItem="ZRl-89-gRO" firstAttribute="centerY" secondItem="87h-1G-t5q" secondAttribute="centerY" id="7UK-u0-dhk"/>
-                        <constraint firstItem="0wH-LJ-SyD" firstAttribute="centerY" secondItem="87h-1G-t5q" secondAttribute="centerY" id="JfE-7p-GjE"/>
+                        <constraint firstItem="Kpe-Ez-Cio" firstAttribute="centerY" secondItem="87h-1G-t5q" secondAttribute="centerY" id="Ios-KG-f2A"/>
+                        <constraint firstAttribute="trailing" secondItem="Kpe-Ez-Cio" secondAttribute="trailing" constant="25" id="WQC-U8-QVf"/>
                         <constraint firstItem="Ghm-bq-BmY" firstAttribute="top" secondItem="ZRl-89-gRO" secondAttribute="top" id="Wnh-2b-khU"/>
                         <constraint firstItem="ZRl-89-gRO" firstAttribute="centerX" secondItem="87h-1G-t5q" secondAttribute="centerX" id="frY-Qv-n2I"/>
                         <constraint firstItem="Ghm-bq-BmY" firstAttribute="centerY" secondItem="87h-1G-t5q" secondAttribute="centerY" id="hYo-Ze-VSL"/>
